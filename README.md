@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+/**
 
-## Getting Started
+Propósito: Este documento documenta el objetivo del proyecto,
 
-First, run the development server:
+cómo ejecutarlo, y lista los componentes implementados con fines académicos.
+*/
 
-```bash
+Demostración de Patrones de Props en React/Next.js
+
+Este es un proyecto Next.js inicializado con create-next-app.
+
+🎯 Objetivo de la Actividad
+
+El objetivo principal de esta actividad es demostrar la comprensión y aplicación de los siete patrones fundamentales para el paso de propiedades (props) entre componentes de React.
+
+🚀 Getting Started & Cómo Correr el Proyecto
+
+Para poner en marcha la aplicación en tu entorno local:
+
+Asegúrate de tener instaladas las dependencias:
+
+npm install
+
+
+Inicia el servidor de desarrollo, como indica el requisito:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Abre http://localhost:3000 en tu navegador para ver la página de demostración.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📦 Lista de Componentes Documentados
 
-## Learn More
+Todos los siguientes archivos son componentes funcionales utilizados y documentados en la página de demostración (app/page.js).
 
-To learn more about Next.js, take a look at the following resources:
+Componente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Patrón de Props Demostrado
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+SaludoBasico.jsx
 
-## Deploy on Vercel
+Acceso tradicional (props.nombre) y paso condicional.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+SaludoDesestructurado.jsx
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desestructuración directa de props.
+
+PerfilConObjeto.jsx
+
+Paso de un objeto complejo como prop única.
+
+BotonConCallback.jsx
+
+Paso de una función (callback) como prop.
+
+ContenedorRenderProp.jsx
+
+Patrón de "Render Prop" (paso de JSX).
+
+CajaChildren.jsx
+
+Uso de la prop children.
+
+SaludoConDefaultProps.jsx
+
+Definición de valores por defecto en props.
+
+NOTA: Todos estos componentes contienen solo documentación, sin ninguna lógica compleja adicional más allá de lo necesario para la demostración.
