@@ -4,12 +4,12 @@
  * desestructurar sus propiedades internas.
  *
  * Props esperadas:
- * - usuario (object): Un objeto que debe contener las siguientes propiedades:
- * - nombre (string): Nombre del usuario.
- * - hobbies (array<string>): Una lista de pasatiempos.
+ * - usuario (object, opcional): Un objeto que puede contener las siguientes propiedades:
+ *   - nombre (string): Nombre del usuario.
+ *   - hobbies (array<string>): Una lista de pasatiempos.
  */
-export default function PerfilConObjeto({ usuario }) {
-  const { nombre, hobbies } = usuario;
+export default function PerfilConObjeto({ usuario = {} }) {
+  const { nombre = "Invitado", hobbies = [] } = usuario;
 
   return (
     <div>

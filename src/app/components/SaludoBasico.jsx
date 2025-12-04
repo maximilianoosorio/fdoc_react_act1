@@ -6,17 +6,16 @@
  * - entusiasta (boolean, opcional): Si es 'true', añade un mensaje de entusiasmo.
  */
 
-export default function SaludoBasico(props) {
-    
+export default function SaludoBasico({ nombre = "Invitado", entusiasta = false }) {
   return (
     <>
-     <h1>Hola, bienvenidos {props.nombre}</h1>
+      <h1>Hola, {nombre}, bienvenido/a</h1>
 
-      {props.entusiasta ===  true ? (
+      {entusiasta ? (
         <p>¡Qué bueno verte tan entusiasta! 🎉</p>
       ) : (
         <p>Bienvenido.</p>
       )}
-   </>
-  )
+    </>
+  );
 }
